@@ -1,4 +1,4 @@
-odoo.define('max_web_hide_treeview_import.max_web_hide_treeview_import', function (require) {
+odoo.define('max_web_hide_list_view_import.max_web_hide_list_view_import', function (require) {
 'use strict';
     var session = require('web.session');
     var ListView = require('web.ListView');
