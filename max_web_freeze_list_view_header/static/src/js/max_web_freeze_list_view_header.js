@@ -6,10 +6,10 @@
         $('table.o_list_view').each(function () {
             $(this).stickyTableHeaders({scrollableArea: scrollArea});
         });
-    }
-    $(window).resize(function() {
-        $('table.o_list_view').each(function () {
-            $(this).stickyTableHeaders({scrollableArea: scrollArea});
+        $(window).resize(function() {
+            $('table.o_list_view').each(function () {
+                $(this).stickyTableHeaders({scrollableArea: scrollArea});
+            });
         });
-    });
+    }
 })(jQuery,window);
