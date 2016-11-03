@@ -23,6 +23,7 @@ from odoo.addons.report.controllers.main import ReportController
 import urllib
 from odoo.http import Controller, route, request
 
+
 class WebPdfReports(ReportController):
 
     @route(['/report/preview'], type='http', auth="user")
@@ -40,4 +41,3 @@ class PreviewReports(Reports):
         result = super(PreviewReports, self).index(action, token)
         result.headers['Content-Disposition'] = result.headers['Content-Disposition'].replace('attachment', 'inline')
         return result
-
